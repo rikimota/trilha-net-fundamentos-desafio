@@ -1,4 +1,4 @@
-﻿using DesafioFundamentos.Models;
+﻿using DesafioEstacionamento.Models;
 
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -15,6 +15,7 @@ precoPorHora = Convert.ToDecimal(Console.ReadLine());
 
 // Instancia a classe Estacionamento, já com os valores obtidos anteriormente
 Estacionamento es = new Estacionamento(precoInicial, precoPorHora);
+List<string> veiculos = new List<string>();
 
 string opcao = string.Empty;
 bool exibirMenu = true;
